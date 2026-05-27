@@ -83,7 +83,7 @@ get_header();
                     <!-- Sidebar Column -->
                     <div class="space-y-10 lg:pl-16 xl:pl-24">
                         <!-- Newsletter -->
-                        <?php get_template_part('template-parts/newsletter'); ?>
+                        <?php // get_template_part('template-parts/newsletter'); ?>
 
                         <!-- Work History -->
                         <?php get_template_part('template-parts/resume'); ?>
