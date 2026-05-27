@@ -1,0 +1,20 @@
+name: Deploy to Dreamhost
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: filippone.dev
+          username: sfilippo
+          key: ${{ secrets.DREAMHOST_SSH_KEY }}
+          script: |
+            cd /home/sfilippo/filippone.dev/wp-content/themes/wp-theme-spotlight
+            git pull origin main

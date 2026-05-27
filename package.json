@@ -1,0 +1,23 @@
+{
+  "name": "spotlight-wordpress-theme",
+  "version": "1.0.0",
+  "description": "A modern WordPress portfolio theme with Tailwind CSS",
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/dist/tailwind.css --minify",
+    "dev": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/dist/tailwind.css --watch"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "tailwind"
+  ],
+  "author": "Your Name",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  }
+}

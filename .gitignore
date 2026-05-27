@@ -1,0 +1,38 @@
+# Dependencies
+/node_modules/
+/vendor/
+
+# Build output
+/dist/
+/build/
+
+# Environment & config
+.env
+.env.*
+wp-config.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Personal files
+*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# WordPress uploads (usually managed outside version control)
+/uploads/
+
+# Cache
+.cache/
+*.cache
